@@ -311,5 +311,10 @@ module OpenapiClient
     end
 
 
+
+    def inspect # :nodoc:
+      # Hide access_token.
+      "#<#{self.class.name}:#{'%#016x' % (object_id << 1)}>"
+    end
   end
 end
